@@ -1,0 +1,51 @@
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+
+.field-validation-error {
+  color: #ed4956;
+  background-image: url('../../images/validate/pwd_sprite.png');
+  background-position: 5px -350px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.field-validation-valid {
+  padding-left: 20px;
+  background-image: url('../../images/validate/pwd_sprite.png');
+  background-position: 0px -248px;
+  background-repeat: no-repeat;
+}
+
+.input-validation-error {
+  border: 1px solid #f00;
+  background-color: #fee;
+}
+
+.validation-summary-errors {
+  font-weight: bold;
+  color: #f00;
+}
+
+.validation-summary-valid {
+  display: none;
+  border: 1px solid red;
+}
+
+.editor-label {
+  color: #616161;
+  width: auto;
+  text-align: right;
+  width: 120px;
+  padding-right: 10px;
+  padding-top: 6px;
+  height: 43px\9;
+  _height: 44px;
+  _padding-top: 8px;
+  font-size: 14px;
+  float: left;
+  padding-top: 12px;
+}
+
+._agqzm {
+  margin: 10px 0px 10px 0px;
+}

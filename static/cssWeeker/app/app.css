@@ -1,0 +1,1742 @@
+/*通用样式*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body,
+html,
+#vue-root {
+    height: 100%;
+}
+
+head {
+    display: none;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+body,
+button,
+textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#vue-root,
+article,
+div,
+footer,
+header,
+main,
+nav,
+section {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a,
+a:visited {
+    color: #003569;
+    text-decoration: none;
+}
+
+
+/*bootstrap 重写样式*/
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 7%;
+}
+
+.modal-content {
+    border: 0px;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    border: 0px;
+    border-bottom: 1px #3897f0 solid;
+    background-color: transparent;
+}
+
+.nav-tabs {
+    width: 100%;
+    border: 0px;
+}
+
+.nav-tabs li {
+    text-align: center;
+}
+
+
+/*框架容器，在没有下拉刷新的情况下，保持优美，存在下拉刷新，这个则无用，mescroll为容器*/
+
+._owark {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin: 0 auto;
+    max-width: 600px;
+    /* position: relative; */
+    width: 100%;
+}
+
+
+/*标题容器，用于左右没有样式，中间有文字的时候*/
+
+.uKzpc {
+    background: #fff;
+    border-bottom: solid 1px #dbdbdb;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/*瀑布式布局*/
+
+.waterfall {
+    display: inline-block;
+    flex-direction: row;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    column-count: 3;
+    -moz-column-gap: 2px;
+    /* Firefox */
+    -webkit-column-gap: 2px;
+    /* Safari 和 Chrome */
+    column-gap: 2px;
+}
+
+.waterfall>* {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0%;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+}
+
+
+/*标题容器，用户左右有样式，中间有文字的时候，pc和ipad不显示*/
+
+._sq5zx {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 600;
+    height: 44px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    left: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+}
+
+._hw7lt {
+    background: 0 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+._sq6zx {
+    position: fixed;
+}
+
+.glyphsSpriteApp_instagram__outline__24__grey_9,
+.glyphsSpriteMobile_nav_type_logo,
+.coreSpriteDesktopNavActivity,
+.coreSpriteDesktopNavExplore,
+.coreSpriteDesktopNavProfile,
+.coreSpriteLoggedOutWordmark,
+.coreSpriteFacebookIconInverted,
+.coreSpriteLoggedOutGenericUpsell,
+.coreSpriteHashtag,
+.coreSpriteHeartFull,
+.coreSpriteHeartOpen,
+.coreSpriteHeartSmall,
+.coreSpriteHyperlapse,
+.coreSpriteInputAccepted,
+.coreSpriteInputError,
+.coreSpriteInputRefresh,
+.coreSpriteLeftChevron,
+.coreSpriteComment,
+.coreSpriteOptionsEllipsis,
+.coreSpriteSaveFull,
+.coreSpriteSaveOpen,
+.coreSpriteOptionsEllipsisLight,
+.coreSpritePagingChevron,
+.coreSpritePlayIconSmall,
+.coreSpriteChevronDownGrey,
+.coreSpriteNotificationLeftChevron,
+.coreSpriteMobileNavSettings,
+.coreSpriteDismissLarge {
+    background-image: url('/static/images/bundles/es6/4e9d9587d7de.png');
+    background-repeat: no-repeat;
+}
+
+.coreSpriteSearchIcon,
+.coreSpriteSearchClear,
+.coreSpriteProfileGridActive,
+.coreSpriteProfileGrid,
+.coreSpriteProfileSave,
+.coreSpriteProfileSaveActive,
+.coreSpriteDesktopProfileTaggedActive,
+.coreSpriteDesktopProfileTagged,
+.coreSpriteActivityHeart,
+.coreSpriteClose,
+.coreSpriteNotificationRightChevron {
+    background-image: url('/static/images/bundles/es6/4f48d3d2062b.png');
+    background-repeat: no-repeat;
+}
+
+.mediatypesSpriteVideo__filled__32,
+.mediatypesSpriteCarousel__filled__32 {
+    background-image: url('/static/images/bundles/es6/65c15d7731ea.png');
+    background-repeat: no-repeat;
+}
+
+
+/*多相册logo*/
+
+.mediatypesSpriteCarousel__filled__32 {
+    background-position: 0 0;
+    height: 32px;
+    width: 32px;
+}
+
+
+/*右侧三角箭头*/
+
+.coreSpriteNotificationRightChevron {
+    background-position: -327px -196px;
+    height: 15px;
+    width: 12px;
+}
+
+
+/*PC头部左边小镜子*/
+
+.glyphsSpriteApp_instagram__outline__24__grey_9 {
+    background-position: -231px -200px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*PC最右边logo*/
+
+.glyphsSpriteMobile_nav_type_logo {
+    background-position: -74px -200px;
+    height: 29px;
+    width: 103px;
+}
+
+
+/*搜索小图标*/
+
+.coreSpriteSearchIcon,
+.coreSpriteSensitivityIcon {
+    background-position: -387px -337px;
+    height: 10px;
+    width: 10px;
+}
+
+
+/*搜索旁边关闭小图标*/
+
+.coreSpriteSearchClear {
+    background-position: -383px -216px;
+    height: 20px;
+    width: 20px;
+}
+
+
+/*pc首页导航*/
+
+.coreSpriteDesktopNavExplore {
+    background-position: -205px -200px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*pc小爱心*/
+
+.coreSpriteDesktopNavActivity {
+    background-position: -286px -274px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*pc小人*/
+
+.coreSpriteDesktopNavProfile {
+    background-position: -130px -274px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*赞*/
+
+.coreSpriteHeartFull {
+    background-position: -260px -274px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*没赞*/
+
+.coreSpriteHeartOpen {
+    height: 24px;
+    width: 24px;
+    background-position: -286px -274px;
+}
+
+
+/*评论*/
+
+.coreSpriteComment {
+    background-position: -247px -128px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*收藏*/
+
+.coreSpriteSaveFull {
+    background-position: -340px -286px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*没收藏*/
+
+.coreSpriteSaveOpen {
+    background-position: -52px -326px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*三个小点*/
+
+.coreSpriteOptionsEllipsis {
+    height: 24px;
+    width: 24px;
+    background-position: -340px -78px;
+}
+
+
+/*pc设置*/
+
+.coreSpriteMobileNavSettings {
+    background-position: -156px -326px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*个人主页我的素材选中*/
+
+.coreSpriteProfileGridActive {
+    background-position: -260px -337px;
+    height: 12px;
+    width: 12px;
+}
+
+
+/*个人主页我的素材未选中*/
+
+.coreSpriteProfileGrid {
+    background-position: -274px -337px;
+    height: 12px;
+    width: 12px;
+}
+
+
+/*个人主页我的收藏选中*/
+
+.coreSpriteProfileSaveActive {
+    background-position: -393px -258px;
+    height: 12px;
+    width: 10px;
+}
+
+
+/*个人主页我的收藏未选中*/
+
+.coreSpriteProfileSave {
+    background-position: -42px -361px;
+    height: 12px;
+    width: 10px;
+}
+
+
+/*个人主页我的选中*/
+
+.coreSpriteDesktopProfileTaggedActive {
+    background-position: -288px -337px;
+    height: 12px;
+    width: 12px;
+}
+
+
+/*个人主页我的未选中*/
+
+.coreSpriteDesktopProfileTagged {
+    background-position: -246px -337px;
+    height: 12px;
+    width: 12px;
+}
+
+
+/*最下方登录提示栏大镜子*/
+
+.coreSpriteLoggedOutGenericUpsell {
+    background-position: -189px -128px;
+    height: 56px;
+    width: 56px
+}
+
+
+/*帖子动态综合页*/
+
+.coreSpriteActivityHeart {
+    background-repeat: no-repeat;
+    background-position: -275px -132px;
+    height: 62px;
+    width: 62px
+}
+
+
+/*最下方登录提示关闭按钮*/
+
+.coreSpriteDismissLarge {
+    background-position: -329px -236px;
+    height: 9px;
+    width: 9px
+}
+
+
+/*叉叉*/
+
+.coreSpriteClose {
+    background-position: -383px -174px;
+    height: 20px;
+    width: 20px;
+}
+
+
+/*下拉*/
+
+.coreSpriteChevronDownGrey {
+    background-position: -187px -308px;
+    height: 12px;
+    width: 12px;
+}
+
+
+/*左箭头*/
+
+.coreSpriteNotificationLeftChevron {
+    background-position: -397px -138px;
+    height: 21px;
+    width: 11px;
+}
+
+
+/*新装*/
+
+
+/*pc头左边*/
+
+.oJZym {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 9999 0%;
+    -ms-flex: 1 9999 0%;
+    flex: 1 9999 0%;
+    min-width: 40px;
+}
+
+.Igw0E {
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+
+.rBNOH {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.j6NZI,
+.q0n74,
+.ybXk5 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.eGOV_ {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+._4EzTm,
+.ui_ht {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.SvO5t,
+.cq2ai {
+    -webkit-transition: opacity .1s ease-out;
+    transition: opacity .1s ease-out;
+}
+
+.SvO5t {
+    background-color: #262626;
+    height: 28px;
+    margin: 0 16px;
+    width: 1px;
+}
+
+.SvO5t,
+.cq2ai {
+    -webkit-transition: opacity .1s ease-out;
+    transition: opacity .1s ease-out;
+}
+
+.cq2ai {
+    margin-top: 7px;
+}
+
+
+/*旧装*/
+
+.Z2m7o {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    display: none;
+}
+
+.CgFia {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+}
+
+.XjicZ {
+    background-color: #262626;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 44px;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.JBIyP {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
+._6_3uQ,
+._6_3uQ:visited {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #3897f0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 12px 0 12px 12px;
+    text-transform: uppercase;
+    -webkit-box-flex: 1;
+}
+
+.gxNyb {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    max-height: 72px;
+    padding: 12px 0;
+    overflow: hidden;
+}
+
+._jjqj5 {
+    left: 16px;
+}
+
+._hxdvz {
+    position: absolute;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+._9glb8,
+._jsq45 {
+    background: 0 0;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+._52qm9 {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #262626;
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+._l4k34 {
+    right: 16px;
+}
+
+._b07vn {
+    background-color: #262626;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /*min-height: 44px;*/
+    padding: 0 16px;
+    width: 100%;
+    position: fixed;
+}
+
+._2wgd9 {
+    background: #ed4956;
+    z-index: 15;
+    cursor: pointer;
+}
+
+._47op9 {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
+._fb78b,
+._fb78b a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    max-height: 72px;
+    overflow: hidden;
+}
+
+
+/*模板样式*/
+
+._29u45 {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._gft4l {
+    background-color: #fafafa;
+    padding: 0;
+}
+
+._gft4l,
+._snde0 ._f4a0g {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+}
+
+._68u16,
+._axuw9 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    height: 52px;
+}
+
+._tpnch {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+    height: 52px;
+}
+
+._5rnaq {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 77px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 1010px;
+    padding: 26px 40px;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+    width: 100%;
+}
+
+._5rnaq,
+._caluf,
+._tpnch {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+._cyf06 {
+    height: 52px;
+    padding: 0 40px;
+}
+
+._devkn {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0%;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+._bvwt0,
+._qlijk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 24px;
+    white-space: nowrap;
+}
+
+._hafnz {
+    color: #c7c7c7;
+    font-size: 14px;
+    line-height: 29px;
+    margin: 0 8px;
+}
+
+a._l8p4s,
+a._l8p4s:visited {
+    color: #3897f0;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+._3opco,
+._l8p4s {
+    font-size: 16px;
+}
+
+._ohbcb {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+    position: relative;
+}
+
+._b28md:not(:first-child) {
+    margin-left: 30px;
+}
+
+._8fi2q {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+}
+
+._2v79o {
+    background-color: #fafafa;
+}
+
+._evlcw {
+    padding: 0 20px;
+}
+
+._snde0,
+._evlcw {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5;
+}
+
+._bz8nr {
+    height: 45px;
+}
+
+._4pxed,
+._k3nd9 {
+    height: 45px;
+}
+
+._4pxed {
+    background-color: #fafafa;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 10;
+}
+
+._g1mg2 ._4pxed {
+    background-color: #fff;
+    border: 0;
+    bottom: 0;
+    height: 44px;
+    top: auto;
+}
+
+._fysxf,
+._tgfps {
+    height: 100%;
+}
+
+._tdn3u {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+}
+
+._k0d2z {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+._ttgfw {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+
+._crp8c {
+    margin: 0 auto;
+}
+
+._mdf8w {
+    margin-top: -1px;
+}
+
+._m3m1d {
+    background: 0 0;
+    border: none;
+    color: #999;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+._1s3cd {
+    cursor: pointer;
+}
+
+._cqw45._2pnef {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, .8);
+    border: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+._cqw45 {
+    background: #fafafa;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    padding: 16px 44px 20px;
+    text-align: center;
+}
+
+._mtajp {
+    margin: 0 auto;
+    max-width: 614px;
+    position: relative;
+    width: 100%;
+}
+
+._2pnef ._5gt5u {
+    right: 0;
+}
+
+._5gt5u {
+    position: absolute;
+    right: -28px;
+    top: 0;
+    z-index: 1;
+}
+
+._eyfjt {
+    margin: 0 auto 16px;
+}
+
+._2pnef ._obnvx {
+    margin: 0 auto 5px;
+}
+
+._2pnef ._eyflt,
+._2pnef ._iksx1 {
+    color: #fff;
+}
+
+._eyflt {
+    font-weight: 600;
+}
+
+._iksx1 {
+    color: #999;
+    margin-top: 6px;
+}
+
+._c9agk button {
+    margin-top: 8px;
+}
+
+._4tgw8,
+._r9b8f {
+    padding: 0 12px;
+}
+
+._gexxb,
+._i63ih._gexxb {
+    background: #3897f0;
+    border-color: #3897f0;
+    color: #fff;
+}
+
+._2pnef ._37am6 {
+    margin-bottom: -10px;
+}
+
+._ov9ai {
+    display: block;
+    position: relative;
+}
+
+._37am6 button {
+    color: #3897f0;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+._njrw0 {
+    cursor: pointer;
+}
+
+._qv64e {
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+._l16nh {
+    background: 0 0;
+    border: 0;
+    color: #003569;
+    font-weight: 400;
+}
+
+._nfphn {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-top: 4px;
+    text-align: right;
+    padding: 0 16px;
+}
+
+._ds3zg,
+._ds3zg:active,
+._ds3zg:visited {
+    color: #3897f0;
+    font-size: 14px;
+}
+
+
+/***********************************************************************/
+
+._jimzn {
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* background-color: rgba(0,0,0,.5); */
+    bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+._elfq9 {
+    width: 260px;
+}
+
+._jct08 {
+    background-color: #fff;
+    border-radius: 12px;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin: 20px;
+    padding: 32px;
+}
+
+._fbxld {
+    left: -9999px;
+    opacity: 0;
+    position: fixed;
+}
+
+._dvepe,
+._jelkz {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+._i38s9:only-child {
+    margin-top: -32px;
+}
+
+._i38s9 {
+    margin: 0 -32px -32px;
+}
+
+._i38s9:only-child ._c92w7:first-of-type {
+    border-top: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+._3kb1s {
+    color: inherit;
+}
+
+._c92w7 {
+    background-color: transparent;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #efefef;
+    cursor: pointer;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*手机*/
+
+@media screen and (max-width:629px) {
+    ._owark {
+        margin-bottom: 12px;
+        margin-top: 44px;
+    }
+    .glyphsSpriteSearch,
+    .coreSpriteStoryCreation,
+    .coreSpriteMobileNavTypeLogo,
+    .coreSpriteMobileNavDiscoverPeople,
+    .coreSpriteMobileNavHomeInactive,
+    .coreSpriteMobileNavSearchInactive,
+    .coreSpriteFeedCreation,
+    .coreSpriteMobileNavActivityInactive,
+    .coreSpriteMobileNavProfileInactive,
+    .coreSpriteMobileNavHomeActive,
+    .coreSpriteMobileNavSearchActive,
+    .coreSpriteMobileNavActivityActive,
+    .coreSpriteMobileNavProfileActive,
+    .coreSpriteProfileGridActive,
+    .coreSpriteProfileGrid,
+    .coreSpriteProfileSave,
+    .coreSpriteProfileSaveActive,
+    .coreSpriteDesktopProfileTaggedActive,
+    .coreSpriteDesktopProfileTagged,
+    .coreSpriteHeartFull,
+    .coreSpriteHeartOpen,
+    .coreSpriteComment,
+    .coreSpriteSaveFull,
+    .coreSpriteSaveOpen,
+    .coreSpriteOptionsEllipsis,
+    .coreSpriteMobileNavSettings,
+    .glyphsSpriteChevron {
+        background-image: url('/static/images/bundles/metro/6dcf43711634.png');
+        background-repeat: no-repeat;
+    }
+    .coreSpriteClose,
+    .coreSpriteNotificationRightChevron {
+        background-image: url('/static/images/bundles/metro/6ba81dcece9b.png');
+        background-repeat: no-repeat;
+    }
+    .mediatypesSpriteVideo__filled__32,
+    .mediatypesSpriteCarousel__filled__32 {
+        background-image: url('/static/images/bundles/metro/3be21f338c88.png');
+        background-repeat: no-repeat;
+    }
+    /*小相机logo*/
+    .mediatypesSpriteVideo__filled__32 {
+        background-size: 65px 65px;
+        background-position: 0 -33px;
+        height: 32px;
+        width: 32px;
+    }
+    /*多相册logo*/
+    .mediatypesSpriteCarousel__filled__32 {
+        background-size: 65px 65px;
+        background-position: 0 0;
+        height: 32px;
+        width: 32px;
+    }
+    /*右三角箭头*/
+    .coreSpriteNotificationRightChevron {
+        background-size: 410px 396px;
+        background-position: -324px -256px;
+        height: 15px;
+        width: 12px;
+    }
+    /*相机*/
+    .coreSpriteStoryCreation {
+        background-size: 355px 344px;
+        background-position: -75px -270px;
+        height: 24px;
+        width: 24px;
+    }
+    /*logo*/
+    .coreSpriteMobileNavTypeLogo {
+        background-size: 355px 344px;
+        background-position: -73px -197px;
+        height: 29px;
+        width: 103px;
+    }
+    /*加好友*/
+    .coreSpriteMobileNavDiscoverPeople {
+        background-size: 355px 344px;
+        background-position: -100px -270px;
+        height: 24px;
+        width: 24px;
+    }
+    /*赞*/
+    .coreSpriteHeartFull {
+        background-size: 355px 344px;
+        background-position: -250px -270px;
+        height: 24px;
+        width: 24px;
+    }
+    /*没赞*/
+    .coreSpriteHeartOpen {
+        height: 24px;
+        width: 24px;
+        background-size: 355px 344px;
+        background-position: -275px -270px;
+    }
+    /*评论*/
+    .coreSpriteComment {
+        background-size: 355px 344px;
+        background-position: -117px -97px;
+        height: 24px;
+        width: 24px;
+    }
+    /*收藏*/
+    .coreSpriteSaveFull {
+        background-size: 355px 344px;
+        background-position: -331px -275px;
+        height: 24px;
+        width: 24px;
+    }
+    /*没收藏*/
+    .coreSpriteSaveOpen {
+        background-size: 355px 344px;
+        background-position: -50px -320px;
+        height: 24px;
+        width: 24px;
+    }
+    /*三个小点*/
+    .coreSpriteOptionsEllipsis {
+        height: 24px;
+        width: 24px;
+        background-size: 355px 344px;
+        background-position: -331px -75px;
+    }
+    /*设置*/
+    .coreSpriteMobileNavSettings {
+        background-size: 355px 344px;
+        background-position: -150px -320px;
+        height: 24px;
+        width: 24px;
+    }
+    /*上一页小三角*/
+    .glyphsSpriteChevron {
+        background-size: 355px 344px;
+        background-position: -250px -295px;
+        height: 24px;
+        width: 24px;
+    }
+    /*第一个*/
+    .coreSpriteMobileNavHomeInactive {
+        background-size: 355px 344px;
+        background-position: -286px -176px;
+        height: 24px;
+        width: 24px;
+    }
+    /*选中*/
+    .coreSpriteMobileNavHomeActive {
+        background-size: 355px 344px;
+        background-position: -300px -270px;
+        height: 24px;
+        width: 24px;
+    }
+    /*第二个*/
+    .coreSpriteMobileNavSearchInactive {
+        background-size: 355px 344px;
+        background-position: -100px -320px;
+        height: 24px;
+        width: 24px;
+    }
+    /*选中*/
+    .coreSpriteMobileNavSearchActive {
+        background-size: 355px 344px;
+        background-position: -75px -320px;
+        height: 24px;
+        width: 24px;
+    }
+    /*第三个*/
+    .coreSpriteFeedCreation {
+        background-size: 355px 344px;
+        background-position: -331px -100px;
+        height: 24px;
+        width: 24px;
+    }
+    /*第四个*/
+    .coreSpriteMobileNavActivityInactive {
+        background-size: 355px 344px;
+        background-position: -275px -270px;
+        height: 24px;
+        width: 24px;
+    }
+    /*选中*/
+    .coreSpriteMobileNavActivityActive {
+        height: 24px;
+        width: 24px;
+        background-size: 355px 344px;
+        background-position: -225px -270px;
+    }
+    /*第五个*/
+    .coreSpriteMobileNavProfileInactive {
+        background-size: 355px 344px;
+        background-position: -125px -270px;
+        height: 24px;
+        width: 24px;
+    }
+    /*选中*/
+    .coreSpriteMobileNavProfileActive {
+        height: 24px;
+        width: 24px;
+        background-size: 355px 344px;
+        background-position: -150px -270px;
+    }
+    /*个人主页我的素材tab*/
+    .coreSpriteProfileGridActive {
+        background-size: 355px 344px;
+        background-position: -331px -175px;
+        height: 24px;
+        width: 24px;
+    }
+    .coreSpriteProfileGrid {
+        background-size: 355px 344px;
+        background-position: -331px -200px;
+        height: 24px;
+        width: 24px;
+    }
+    /*个人主页我的收藏tab*/
+    .coreSpriteProfileSaveActive {
+        background-size: 355px 344px;
+        background-position: 0 -320px;
+        height: 24px;
+        width: 24px;
+    }
+    .coreSpriteProfileSave {
+        background-size: 355px 344px;
+        background-position: -25px -320px;
+        height: 24px;
+        width: 24px;
+    }
+    /*个人主页我的tab*/
+    .coreSpriteDesktopProfileTaggedActive {
+        background-size: 355px 344px;
+        background-position: -125px -320px;
+        height: 24px;
+        width: 24px;
+    }
+    .coreSpriteDesktopProfileTagged {
+        height: 24px;
+        width: 24px;
+        background-size: 355px 344px;
+        background-position: -125px -295px;
+    }
+    /*关闭的叉叉*/
+    .coreSpriteClose {
+        background-size: 410px 396px;
+        background-position: -379px -253px;
+        height: 20px;
+        width: 20px;
+    }
+    .mescroll {
+        position: fixed;
+        top: 44px;
+        padding-bottom: 89px;
+        /*解决绝对定位上下高度差*/
+    }
+    ._4jd83 {
+        /*iframe*/
+        min-height: 750px;
+    }
+    /*提示样式*/
+    ._gft4l {
+        display: none;
+    }
+    ._5rnaq,
+    ._tpnch {
+        height: 34px;
+    }
+    ._t5j1g {
+        height: 44px;
+        z-index: 11;
+        /* border-bottom: 1px solid rgba(0, 0, 0, .0975); */
+    }
+    ._k46tg {
+        display: inline-block;
+        margin-top: 2px;
+    }
+    ._devkn {
+        display: none;
+    }
+    .oBPxI {
+        margin-bottom: 44px;
+    }
+}
+
+
+/*PC*/
+
+@media screen and (min-width:630px) {
+    ._owark {
+        padding-top: 60px;
+    }
+    /*提示样式*/
+    ._sq6zx {
+        display: none;
+    }
+    ._4jd83 {
+        /*iframe*/
+        min-height: 850px;
+    }
+    ._evlcw {
+        display: none;
+    }
+    ._cqw45._2pnef {
+        height: 100px;
+        bottom: 0;
+        padding-top: 20px;
+    }
+    ._2pnef ._mtajp,
+    ._2pnef ._mtajp ._j7p1u {
+        max-width: none;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    ._2pnef ._mtajp ._j7p1u {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        max-width: 944px;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: 64px;
+        width: 100%;
+        margin-left: 7px;
+    }
+    ._2pnef ._mtajp,
+    ._2pnef ._mtajp ._j7p1u {
+        max-width: none;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    ._2pnef ._eyfjt {
+        border: 0;
+        margin: 0 16px 0 0;
+    }
+    ._2pnef ._obnvx {
+        margin-left: 0;
+        max-width: 376px;
+        text-align: left;
+        white-space: normal;
+    }
+    ._2pnef ._1l68d {
+        display: inherit;
+    }
+    ._2pnef ._c9agk {
+        margin-right: 7px;
+    }
+    ._c9agk {
+        display: inline-block;
+    }
+    .CgFia {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .HGN2m {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        min-width: 500px;
+        width: auto;
+    }
+}
+
+
+/*ipad处理*/
+
+@media screen and (min-width:630px) and (max-width:1024px) {
+    .mescroll {
+        position: fixed;
+        max-width: 600px;
+        padding-bottom: 89px;
+        /*解决绝对定位上下高度差*/
+    }
+}
+
+
+/*pc处理*/
+
+@media screen and (min-width:1025px) {
+    .mescroll {
+        position: none;
+    }
+}

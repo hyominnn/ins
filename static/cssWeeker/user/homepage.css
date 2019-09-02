@@ -1,0 +1,41 @@
+._0mzm-,
+._0mzm- * {
+    outline: 0 !important;
+}
+
+.sqdOP {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: 0 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    text-transform: inherit;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.yWX7d,
+.yWX7d:visited,
+a.yWX7d,
+a.yWX7d:visited {
+    border: 0;
+    color: #3897f0;
+    display: inline;
+    padding: 0;
+}
+
+.XX1Wc>button {
+    text-align: left;
+}
